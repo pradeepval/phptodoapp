@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
+    <h1 class="top-heading"> TODO LIST APLLICATION</h1>
     <div class="container">
-        <h1 class="top-heading"> TODO LIST APLLICATION</h1>
         <form action="" method="post">
         <div class="input-container">
             <input type="text" name="inputBox" id="inputBox">
