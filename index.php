@@ -17,7 +17,7 @@
             </div>
             <ul class="list">
                 <li class="item">
-                     <P>item 1</p>
+                     <P>item 1  </p>
                      <div class="icon-container">
                          <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
                          <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
