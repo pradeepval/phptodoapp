@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>    
+<body>
        <h1 class="top-heading"> TODO LIST APLLICATION</h1>
     <div class="container">
         <form action="" method="post">
@@ -27,13 +27,20 @@
             <hr>
             <ul class="list">
                 <li class="item">
-                     <P>item 1</p>
+                     <P>item 2</p>
                      <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
                      <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
                 </li>
             </ul>
-        </form> 
-    </div>   
+            <ul class="list">
+                <li class="item">
+                     <P>item 3</p>
+                     <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
+                     <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                </li>
+            </ul>
+        </form>
+    </div>
     <script src="https://kit.fontawesome.com/9d3e972470.js" crossorigin="anonymous"></script>
 </body>
 </html>
