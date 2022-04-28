@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(91, 91, 91);
+}
 .container {
   display: flex;
   justify-content: center;
@@ -11,4 +14,55 @@
 
 .top-heading {
   text-align: center;
+  color: rgb(182, 150, 103);
+}
+form {
+  width: 70%;
+}
+.input-container {
+    /* background-color: aqua; */ */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+#inputBox {
+  width: 70%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: large;
+  border-radius: 10px;
+  /* background-color: rgb(244, 234, 218); */
+}
+#add {
+  margin-left: 10px;
+  font-size: large;
+  padding: 15px;
+  border-radius: 10px; 
+  border: none;
+  outline: none ;
+  background-color: cadetblue;
+  color: white;
+}
+#add:hover{
+    cursor: pointer;
+}
+.list{
+    
+}
+.item{
+    background-color: rgb(142, 145, 99);
+    display: flex;
+    font-size: x-large;
+    padding: 20px;
+    margin: 10px;
+}
+.item p{
+    flex-basis: 80%; 
+}
+.icon-conatiner{
+     flex-basis: 20%;
 }

@@ -16,10 +16,10 @@
          <button type="submit" id="add">ADD</button>
      </div>
       <ul class="list">
-          <li class="item">
+         ><i class="fa-solid fa-check"></i></button>
+             <button t <li class="item">
              <p>item 1</p>
-             <button type="submit" name="" id="check"><i class="fa-solid fa-check"></i></button>
-             <button type="submit" name="" id="delete"><i class="fa-solid fa-delete-left"></i></button>
+             <button type="submit" name="" id="check"ype="submit" name="" id="delete"><i class="fa-solid fa-delete-left"></i></button>
           </li>
       </ul>
       <hr>

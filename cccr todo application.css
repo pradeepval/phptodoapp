@@ -1,23 +1,22 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.top-heading{
-    text-align: center;
+.top-heading {
+  text-align: center;
 }
-.input-container{
-    background-color: aqua;
-    width:100%;
+.input-container {
+  background-color: aqua;
+  width: 100%;
 }
-.inputBox{
-     width:100%;
+.inputBox {
+  width: 100%;
 }
-#submit{
-
+#submit {
 }
