@@ -17,7 +17,16 @@
             </div>
             <ul class="list">
                 <li class="item">
-                     <P>item 1  </p>
+                     <P>item 1 </p>
+                     <div class="icon-container">
+                         <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
+                         <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                     </div>
+                </li>
+            </ul>
+             <ul class="list">
+                <li class="item">
+                     <P>item 2 </p>
                      <div class="icon-container">
                          <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
                          <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
@@ -26,17 +35,12 @@
             </ul>
             <hr>
             <ul class="list">
-                <li class="item">
-                     <P>item 2</p>
-                     <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
-                     <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
-                </li>
-            </ul>
-            <ul class="list">
-                <li class="item">
-                     <P>item 3</p>
-                     <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
-                     <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                <li class="item fade">
+                     <P class="deleted-text"><span>item 3</span></p>
+                     <div class="icon-container">
+                         <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check hidden"></i></button>
+                         <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                     </div>
                 </li>
             </ul>
         </form>
