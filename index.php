@@ -1,3 +1,6 @@
+<?php
+include "database.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,28 +13,24 @@
 <body>
        <h1 class="top-heading"> TODO LIST APLLICATION</h1>
     <div class="container">
-        <form action="" method="post">
+        <form action="handleActions.php" method="post">
             <div class="input-container">
-               <input type="text" name="inputBox" id="inputBox">
-               <button type="submit" id="add">ADD</button>
+               <input type="text" name="inputBox" id="inputBox" required>
+               <button type="submit"  name="add" id="add">ADD</button>
             </div>
             <ul class="list">
+                <?php
+$itemList = getItems();
+while ($row = $itemList->fetch_assoc()) {
+ ?>
                 <li class="item">
-                     <P>item 1 </p>
+                     <P><?php echo $row["item"]; ?> </p>
                      <div class="icon-container">
-                         <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
-                         <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                         <button type="submit" name="checked" id="check"><i class="fa-solid fa-circle-check"></i></button>
+                         <button type="submit" name="deleted" id="delete"><i class="fa-solid fa-trash-can"></i></button>
                      </div>
                 </li>
-            </ul>
-             <ul class="list">
-                <li class="item">
-                     <P>item 2 </p>
-                     <div class="icon-container">
-                         <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check"></i></button>
-                         <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
-                     </div>
-                </li>
+            <?php }?>
             </ul>
             <hr>
             <ul class="list">
