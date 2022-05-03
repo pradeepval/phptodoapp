@@ -15,7 +15,7 @@ include "database.php";
     <div class="container">
         <form action="handleActions.php" method="post">
             <div class="input-container">
-               <input type="text" name="inputBox" id="inputBox" required>
+               <input type="text" name="inputBox" id="inputBox" >
                <button type="submit"  name="add" id="add">ADD</button>
             </div>
             <ul class="list">
@@ -26,21 +26,26 @@ while ($row = $itemList->fetch_assoc()) {
                 <li class="item">
                      <P><?php echo $row["item"]; ?> </p>
                      <div class="icon-container">
-                         <button type="submit" name="checked" id="check"><i class="fa-solid fa-circle-check"></i></button>
-                         <button type="submit" name="deleted" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                         <button type="submit" name="checked" id="check" value="<?php echo $row["id"]; ?>"><i class="fa-solid fa-circle-check"></i></button>
+                         <button type="submit" name="deleted" id="delete" value="<?php echo $row["id"]; ?>"><i class="fa-solid fa-trash-can"></i></button>
                      </div>
                 </li>
             <?php }?>
             </ul>
             <hr>
             <ul class="list">
+                 <?php
+$itemList = getItemsChecked();
+while ($row = $itemList->fetch_assoc()) {
+ ?>
                 <li class="item fade">
-                     <P class="deleted-text"><span>item 3</span></p>
+                     <P class="deleted-text"><span><?php echo $row["item"]; ?></span></p>
                      <div class="icon-container">
                          <button type="submit" name="" id="check"><i class="fa-solid fa-circle-check hidden"></i></button>
-                         <button type="submit" name="" id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                         <button type="submit" name="deleted" id="delete" value="<?php echo $row["id"]; ?>"><i class="fa-solid fa-trash-can"></i></button>
                      </div>
                 </li>
+                <?php }?>
             </ul>
         </form>
     </div>

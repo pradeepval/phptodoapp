@@ -6,9 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    addItems($_POST["inputBox"]);
   }
  } else if (isset($_POST["checked"])) {
-  update_items();
+  //echo $_POST["checked"];
+  updateItems($_POST["checked"]);
  } else if (isset($_POST["deleted"])) {
-  delete_items();
+  deleteItems($_POST["deleted"]);
  }
 }
 

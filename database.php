@@ -25,3 +25,22 @@ function getItems()
  $result = $con->query($query);
  return $result;
 }
+function getitemsChecked()
+{
+ $con    = makeConnection();
+ $query  = "SELECT id,item from todolist WHERE status='1'";
+ $result = $con->query($query);
+ return $result;
+}
+function updateItems($id)
+{
+ $con    = makeConnection();
+ $query  = "UPDATE todolist set status ='1' WHERE id='$id'";
+ $result = $con->query($query);
+}
+function deleteItems($id)
+{
+ $con    = makeConnection();
+ $query  = "DELETE from  todolist  WHERE id='$id'";
+ $result = $con->query($query);
+}
